@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Battle</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="inner-inner">
+                <div class="inner-inner2"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <style>
+        body{
+            background: #6592cf;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer{
+            width: 200px;
+            height: 200px;
+            background: #243d83;
+            border-radius: 50%;
+            margin: 50px auto;
+            display: flex;
+            
+        }
+        .inner{
+            background: #6592cf;
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            border-radius: 50%;
+             
+        }
+
+        .inner-inner{
+            background: inherit;
+            width: 50%;
+            height: 100px;
+            transform: translateY(-50%);
+
+        }
+
+        .inner-inner2{
+            background:#243d83 ;
+            width: 100%;
+            height: inherit;
+            transform: translateX(-100%);
+        }
+    </style>
+</body>
+</html>
